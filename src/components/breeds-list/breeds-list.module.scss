@@ -1,0 +1,8 @@
+.breedsList {
+    height: 100%;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: 100px;
+    gap: var(--large-spacing);
+}

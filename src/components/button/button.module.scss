@@ -1,0 +1,12 @@
+.btn {
+    outline: none;
+    font-size: 14px;
+    padding: var(--small-spacing) var(--medium-spacing);
+    background-color: #faf0f0;
+    border-radius: var(--medium-spacing);
+
+    &:hover {
+        background-color: #dfdbdb;
+        cursor: pointer;
+    }
+}

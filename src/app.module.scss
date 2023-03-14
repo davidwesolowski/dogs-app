@@ -1,0 +1,24 @@
+:root {
+  --dark-color-900: #1b1b1b;
+  --dark-color-800: #353535;
+  --dark-color-700: #faf5f5;
+  --large-spacing: 24px;
+  --medium-spacing: 12px;
+  --small-spacing: 4px;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  height: 100vh;
+  background-color: var(--dark-color-900);
+  color: #fff;
+  padding: var(--large-spacing);
+}
