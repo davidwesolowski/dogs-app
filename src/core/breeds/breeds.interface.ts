@@ -12,6 +12,8 @@ export interface BreedsListDTO extends BreedBase {
 
 export type BreedsList = string[];
 
-export interface BreedImagesList extends BreedBase {
+export interface BreedImagesListDTO extends BreedBase {
     message: string[];
 }
+
+export type BreedImages = string[];

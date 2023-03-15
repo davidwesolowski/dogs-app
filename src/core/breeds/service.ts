@@ -1,6 +1,6 @@
 import { api } from "../api"
 import { API_URLS } from "../urls"
-import { BreedImagesList, BreedsList, BreedsListDTO } from "./breeds.interface"
+import { BreedsList, BreedsListDTO, BreedImages, BreedImagesListDTO } from "./breeds.interface"
 
 export const createBreedsApi = () => {
     const getAllBreeds = async (): Promise<BreedsList | null> => {
@@ -13,11 +13,11 @@ export const createBreedsApi = () => {
         }
     }
 
-    const getBreedImages = async (breed: string): Promise<BreedImagesList | null> => {
+    const getBreedImages = async (breed: string): Promise<BreedImages | null> => {
         try {
-            const data = await api<BreedsListDTO>(API_URLS.ALL_BREEDS);
+            const data = await api<BreedImagesListDTO>(API_URLS.BREED_IMAGES(breed));
 
-            return await api<BreedImagesList>(API_URLS.BREED_IMAGES(breed));
+            return data.message;
         } catch {
             return null;
         }

@@ -1,8 +1,30 @@
 .breedsList {
+    flex-grow: 1;
     height: 100%;
-    overflow-y: auto;
     display: grid;
+    overflow-y: auto;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows: 100px;
     gap: var(--large-spacing);
+
+
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--dark-color-100);
+        }
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 10px;
+    }
 }
+

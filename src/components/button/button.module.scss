@@ -1,12 +1,49 @@
 .btn {
     outline: none;
     font-size: 14px;
+    font-weight: 600;
     padding: var(--small-spacing) var(--medium-spacing);
-    background-color: #faf0f0;
-    border-radius: var(--medium-spacing);
+    background-color: #fff;
+    border-radius: var(--small-spacing);
+    border: none;
+    cursor: pointer;
+}
+
+.btnPrimary {
+    --primary-color: transparent;
+
+    background-color: transparent;
+    border: 1px solid var(--dark-color-600);
+    color: #fff;
 
     &:hover {
-        background-color: #dfdbdb;
-        cursor: pointer;
+        background-color: var(--dark-color-600);
+        border-color: var(--dark-color-600);
+    }
+
+    &:active {
+        background-color: var(--dark-color-700);
+        border-color: var(--dark-color-700);
+    }
+}
+
+.btnCta {
+    --cta-color: #00c7fd;
+    --cta-active-color: #005b85;
+    --cta-hover-color: #0e72a0;
+
+    background-color: var(--cta-color);
+    border: 1px solid var(--cta-color);
+
+    color: var(--dark-color-900);
+
+    &:hover {
+        background-color: var(--cta-hover-color);
+        border-color: var(--cta-hover-color);
+    }
+    
+    &:active {
+        background-color: var(--cta-active-color);
+        border-color: var(--cta-active-color);
     }
 }

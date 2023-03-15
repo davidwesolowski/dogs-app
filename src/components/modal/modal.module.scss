@@ -1,0 +1,21 @@
+.modalContainer {
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-color-alpha-900);
+    display: grid;
+    place-items: center;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-color-900);
+    border-radius: var(--medium-spacing);
+    padding: var(--large-spacing);
+}
+

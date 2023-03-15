@@ -17,15 +17,18 @@ export const useBreeds = (): UseBreeds => {
         const { getAllBreeds } = createBreedsApi();
 
         setIsLoading(true);
-        getAllBreeds().then((data) => {
-            if (data) {
-                setBreeds(data)
-                return;
-            }
 
-            setIsError(true);
-        }).finally(() => setIsLoading(false));
+        getAllBreeds()
+            .then((data) => {
+                if (data) {
+                    setBreeds(data)
+                    return;
+                }
 
+                setIsError(true);
+            })
+            .finally(() => setIsLoading(false)
+        );
 
     }, []);
 
