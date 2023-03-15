@@ -44,7 +44,7 @@
 .noContent {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 37.6px - (2 * var(--medium-spacing))); // 100% - header - gap
+    height: calc(100% - 37.6px - (6 * var(--medium-spacing))); // 100% - header - gap
 }
 
 .noContentText {

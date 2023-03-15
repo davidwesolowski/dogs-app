@@ -1,3 +1,3 @@
 export const Error = (): JSX.Element => {
-    return <p>Error while fetching data...</p>
+    return <h2 style={{ color: '#fff' }}>Error while fetching data...</h2>
 }
